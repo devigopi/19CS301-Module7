@@ -12,18 +12,20 @@ STEP 5: Print the result. STEP 6: Stop.
 
 ### Program:
 ```
-def fun(x,n):
-    if(n==0):
-        return 1
+def sum_digits(num):
+    if num < 0 or int(num) != num:
+        return 0
+    elif num == 0:
+        return 0
     else:
-        return((2**n)*(x**n)+fun(x,n-1))
-x=int(input())
-n=int(input())
-print(fun(x,n))
+        return (num % 10) + sum_digits(num//10)
+num= int(input())
+print(sum_digits(num))
 ```
 ### Output:
 
-![7a](https://github.com/user-attachments/assets/aa64fb4c-1f12-491f-83cc-f790b2c5d6cd)
+![7c](https://github.com/user-attachments/assets/05855041-871c-4c0e-8729-b5da01c91228)
+
 
 ### Result: Thus, the given program is implemented and executed successfully .
  
@@ -77,17 +79,18 @@ STEP 5: Print the result.
 STEP 6: Stop.
 ### Program:
 ```
-def series(x,n):
-         if n==0:
-            return 1
-         else:
-            return x**n/n+series(x,n-1)
-x = int(input())
-n = int(input())
-print(series(x,n))
+def fun(x,n):
+    if(n==0):
+        return 1 
+    else:
+        return ((2**n)*(x**n)+fun(x,n-1))
+x=int(input())
+n=int(input())
+print(fun(x,n))
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/1d00b1a4-cecb-466f-8593-805f00d27461)
+
+![7a](https://github.com/user-attachments/assets/b2bdea9b-7f6e-4941-8597-6b81c904955f)
 
  
 ### Result: Thus, the given program is implemented and executed successfully .
