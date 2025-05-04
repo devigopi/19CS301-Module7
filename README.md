@@ -12,48 +12,49 @@ STEP 5: Print the result. STEP 6: Stop.
 
 ### Program:
 ```
-def sum_digit(n):
-       if n<=0:
-            return 0
-       else:
-            return n%10+sum_digit(n//10)
-n = int(input())
-sum = sum_digit(n)
-print(sum)
+def fun(x,n):
+    if(n==0):
+        return 1
+    else:
+        return((2**n)*(x**n)+fun(x,n-1))
+x=int(input())
+n=int(input())
+print(fun(x,n))
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/50acc657-266e-46e6-ab17-10358494e26c)
+
+![7a](https://github.com/user-attachments/assets/aa64fb4c-1f12-491f-83cc-f790b2c5d6cd)
 
 ### Result: Thus, the given program is implemented and executed successfully .
  
 
 EX: 7.2 TYPES OF RECURSIONS
-### Aim: To Write a Python Program to find the sum of all digits in a number using recursion
+### Aim: To Write a Python program to display first n natural numbers using head recursion 
 ### Algorithm:
-STEP 1: Start.
 
-STEP 2: Define a function.
-
-STEP 3: Create a recursive case in the first line of function for head recursion.
-
-STEP 4: Print the result.
-
-STEP 5: Stop.
 ### Program:
 ```
-def fun(n):
-     if (n >0):
-          fun(n - 2)
-      print(n-1, end=" ")
-x = int(input())
-if(x%2==0):
-     fun(x)
-else:
-     fun(x+1)
+Step 1: Start
+Step 2: Define a recursive function print_natural_numbers(n)
+Step 3:
+    If n == 0, then
+      Return (base case: stop recursion)
+Step 4:
+    Call print_natural_numbers(n - 1)  ← (recursive call happens first: head recursion)
+Step 5:
+    Print the value of n
+Step 6: End function
+Step 7: In the main program:
+    a. Read the value of n from the user
+    b. Call the function print_natural_numbers(n)
+Step 8: End
+
 
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/c4d6416f-d333-49c1-9dd5-0f774cdabb03)
+
+![7b](https://github.com/user-attachments/assets/a7cc4ecc-ac17-4e8e-a0ab-0397936ffd3a)
+
 
 ###Result: Thus, the given program is implemented and executed successfully.
  
