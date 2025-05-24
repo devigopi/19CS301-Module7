@@ -1,5 +1,5 @@
 7(e) EX:SEB To evaluate the series
-AIM:
+AIM:7e
   Write a Python Program to evaluate the series:  1/1!+1/2!+1/3!+....+1/n!  using recursion.
 Algorithm:
 Step 1:Start
